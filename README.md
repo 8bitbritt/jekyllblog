@@ -1,24 +1,24 @@
 # jekyllblog
-I created a simple blog using Jekyll and SASS.
+<p>I created a simple blog using Jekyll and SASS.</p>
 
-To start editing files with Jekyll:
-1. Install Jekyll (Open up your Console!)
- $ gem install jekyll
+<p>To start editing files with Jekyll:<br>
+1. Install Jekyll (Open up your Console!)<br>
+ $ gem install jekyll</p>
 
-2. Navigate to your blog folder
-$ cd desktop/jekyllblog
+<p>2. Navigate to your blog folder<br>
+$ cd desktop/jekyllblog</p>
 
-3. Build your site
-$ jekyll build
+<p>3. Build your site<br>
+$ jekyll build</p>
 
-4. Run Jekyll
-$ jekyll serve
+<p>4. Run Jekyll<br>
+$ jekyll serve</p>
 
-To edit the CSS files using SASS:
-1. Navigate to your folder in the console
-$ cd desktop/jekyllblog/css
+<p>To edit the CSS files using SASS:<br>
+1. Navigate to your folder in the console<br>
+$ cd desktop/jekyllblog/css</p>
 
-2. Have SASS watch the .scss file for changes
-$ sass --watch main.scss:main.css
+<p>2. Have SASS watch the .scss file for changes<br>
+$ sass --watch main.scss:main.css</p>
 
-This project was meant to teach myself how to use Jekyll.
+<p>This project was meant to teach myself how to use Jekyll.</p>
