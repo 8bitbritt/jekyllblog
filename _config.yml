@@ -1,0 +1,15 @@
+
+name: My Blog
+
+url: ''
+
+baseurl: ''
+
+permalink: /:year/:month/:title
+paginate: 3
+
+highlighter: rouge
+markdown: kramdown
+gems: ['jekyll-paginate']
+
+exclude: ['README.md', 'LICENSE']

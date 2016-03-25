@@ -1,0 +1,370 @@
+$darkgray: #787878;
+$lightgray: #8a8a8a;
+$lightestgray: #555;
+$blue: #58b4da;
+
+$textfont:'Source Sans Pro', Arial, sans-serif;
+$headerfont:'Roboto Condensed', sans-serif;
+$codefont: Monaco, "Courier New", monospace;
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #4a4a4a;
+  background-color: #fafbfc;
+  font-family: $headerfont;
+  font-weight: 400;
+  font-size: 0.85em;
+  overflow: hidden;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  border: none;
+}
+
+a img {
+  outline: none;
+}
+
+a:hover {
+  color: $lightestgray;
+  border: none;
+}
+
+a:visited{
+  color: $darkgray;
+}
+
+.separator {
+  color: $lightestgray;
+}
+
+.clear {
+  clear:both;
+  height: 20px;
+}
+
+img{
+  max-width:100%;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+#logo {
+  max-width: 128px;
+}
+
+.posts a {
+  color: #4195d6;
+}
+
+.posts a:hover {
+  color: $lightgray;
+}
+
+.posts a:visited {
+  color: $darkgray;
+}
+
+.posts-list {
+  list-style-type: none;
+}
+
+.posts-list li {
+  text-align: center;
+  line-height: 1.75em;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  height: 100%;
+  width: 100%;
+  line-height: 1.25em;
+}
+/*Navigation*/
+.topnav {
+    margin-top: 1em;
+    width: 100%;
+    height: 38px;
+    display: block;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.toptitle img{
+float:left;margin-top:-7px;margin-right:5px;
+}
+
+.topnav span{
+  float:left;
+  margin-left: 20px;
+  color: $darkgray;
+}
+
+.topnav ul{
+list-style: none;
+float: right;
+margin-right: 20px;
+}
+
+.topnav li{
+padding-left: 10px;
+display: inline;
+font-family: $textfont;
+}
+
+.topnav li a{
+color:$darkgray;
+}
+
+.topnav li a:hover{
+color: $lightgray;
+}
+
+.topnav li a:visited{
+color: $darkgray;
+}
+
+.toptitle{
+font-size: 1.5em;
+font-family: $headerfont;
+letter-spacing: 1px;
+}
+
+.title {
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+}
+
+.tagline {
+  width: 100%;
+  color: $darkgray;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.5em;
+  display: block;
+  font-family: $textfont;
+}
+
+.posts {
+  border-top: 1px solid #e7e7e7;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.25em;
+}
+
+#wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+  height: 100%;
+  overflow:auto;
+  margin-bottom:-18px;
+}
+
+.footer {
+  height: 18px;
+  font-size: 1.2em;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 1.25em;
+  padding-bottom: 1.5em;
+  width: 100%;
+  text-align: center;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+#date {
+  font-size: 20px;
+  padding-top: 0;
+  text-transform: uppercase;
+  font-family: $textfont;
+  font-weight: 600;
+  color: $darkgray;
+}
+
+#cover-photo-container,
+#info-container {
+  display: block;
+}
+
+#cover-photo{
+margin-bottom: 15px;
+}
+
+#title {
+  color: $blue;
+  margin-bottom: 0.2em;
+  margin-top: 0.1em;
+  font-size: 3em;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.post {
+  line-height: 24px;
+  max-width: 725px;
+  clear: both;
+}
+
+.post h2 {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.post a,
+#about a {
+  border-bottom: 1px solid #8085C1;
+}
+
+.post a:hover {
+  border: none;
+}
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post p {
+  font-family: $textfont ;
+  font-size: 17px;
+  margin-bottom: 1.45em;
+  text-align: justify;
+}
+
+.post ul, .post ol {
+  margin-left: 2.35em;
+  margin-bottom: 1.25em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+/*****************************************************************************/
+/*
+/* Sidebar and Content
+/*
+/*****************************************************************************/
+
+.sidebar,
+.content {
+  vertical-align: top;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin-top: 2em;
+}
+
+.sidebar {
+    float: left;
+    width: 24%;
+    padding-left: 2em;
+    padding-right: 2.125em;
+    border-right: 1px solid #e7e7e7;
+}
+
+.content {
+  padding-left: 2.125em;
+}
+
+.header {
+  text-align: center;
+  padding-top: 0;
+  font-size: 1.1em;
+}
+
+.post-link {
+  margin-bottom: 0.75em;
+}
+
+.post-title {
+  font-weight: 600;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+.post-date {
+  color: $lightgray;
+  font-family: $codefont;
+  font-weight: 600;
+  font-size: 0.65em;
+  display: block;
+  text-transform: uppercase;
+}
+
+#sidebar-button {
+  height: intrinsic;
+  cursor: pointer;
+  display: none;
+  padding: 15px 5px 0px 0px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+#sidebar-button:active,
+#sidebar-button:hover {
+  opacity: 0.7;
+}
+
+/*****************************************************************************/
+/*
+/* Colophon
+/*
+/*****************************************************************************/
+
+.colophon {
+  margin-top: 1.5em;
+  margin-bottom: 1.45em;
+}
+
+.colophon p {
+  margin-top: 1.25em;
+  font-size: 0.95em;
+  color: #777;
+}
